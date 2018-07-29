@@ -1,0 +1,51 @@
+﻿@model ManyToManyRelationship.Models.AcademicHistory
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AcademicHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Degree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Degree)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Institute)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institute)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassingYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassingYear)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AcademicHistoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

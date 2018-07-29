@@ -15,6 +15,8 @@ namespace ManyToManyRelationship.Models
         }
 
         public DbSet<Employee> Employee { get; set; }
+        public DbSet<AcademicHistory> AcademicHistories { get; set; }
+        public DbSet<EmployeeAcademicHistory> EmployeeAcademicHistories { get; set; }
 
     }
 }
