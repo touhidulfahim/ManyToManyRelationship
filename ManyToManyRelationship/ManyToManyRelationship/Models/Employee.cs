@@ -16,7 +16,9 @@ namespace ManyToManyRelationship.Models
         public string Email { get; set; }
         public string Mobile { get; set; }
 
-        public virtual ICollection<EmployeeAcademicHistory> EmployeeAcademicHistories { get; set; }
+        public virtual ICollection<ProjectAssign> ProjectAssigns { get; set; }
+
+
 
     }
 }

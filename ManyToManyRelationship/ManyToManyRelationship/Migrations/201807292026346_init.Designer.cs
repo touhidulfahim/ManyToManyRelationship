@@ -7,13 +7,13 @@ namespace ManyToManyRelationship.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addEmployee : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addEmployee));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807291833142_addEmployee"; }
+            get { return "201807292026346_init"; }
         }
         
         string IMigrationMetadata.Source

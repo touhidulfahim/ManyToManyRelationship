@@ -154,25 +154,22 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AcademicHistoriesController.cs" />
-    <Compile Include="Controllers\EmployeeAcademicHistoriesController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807291833142_addEmployee.cs" />
-    <Compile Include="Migrations\201807291833142_addEmployee.Designer.cs">
-      <DependentUpon>201807291833142_addEmployee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807291920373_addEmplAcadmics.cs" />
-    <Compile Include="Migrations\201807291920373_addEmplAcadmics.Designer.cs">
-      <DependentUpon>201807291920373_addEmplAcadmics.cs</DependentUpon>
+    <Compile Include="Migrations\201807292026346_init.cs" />
+    <Compile Include="Migrations\201807292026346_init.Designer.cs">
+      <DependentUpon>201807292026346_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademicHistory.cs" />
     <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\EmployeeAcademicHistory.cs" />
     <Compile Include="Models\MtoMRelContext.cs" />
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\ProjectAssign.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -224,11 +221,11 @@
     <Content Include="Views\AcademicHistories\Details.cshtml" />
     <Content Include="Views\AcademicHistories\Edit.cshtml" />
     <Content Include="Views\AcademicHistories\Index.cshtml" />
-    <Content Include="Views\EmployeeAcademicHistories\Create.cshtml" />
-    <Content Include="Views\EmployeeAcademicHistories\Delete.cshtml" />
-    <Content Include="Views\EmployeeAcademicHistories\Details.cshtml" />
-    <Content Include="Views\EmployeeAcademicHistories\Edit.cshtml" />
-    <Content Include="Views\EmployeeAcademicHistories\Index.cshtml" />
+    <Content Include="Views\Projects\Create.cshtml" />
+    <Content Include="Views\Projects\Delete.cshtml" />
+    <Content Include="Views\Projects\Details.cshtml" />
+    <Content Include="Views\Projects\Edit.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -247,11 +244,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807291833142_addEmployee.resx">
-      <DependentUpon>201807291833142_addEmployee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807291920373_addEmplAcadmics.resx">
-      <DependentUpon>201807291920373_addEmplAcadmics.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807292026346_init.resx">
+      <DependentUpon>201807292026346_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
